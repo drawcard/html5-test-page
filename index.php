@@ -1,11 +1,19 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5 Test Page</title>
-</head>
-<body>
+<div class="content">
+
+<?php
+/*
+  ____                          ____            _             _
+ |  _ \  ___ _ __ ___   ___    / ___|___  _ __ | |_ ___ _ __ | |_
+ | | | |/ _ \ '_ ` _ \ / _ \  | |   / _ \| '_ \| __/ _ \ '_ \| __|
+ | |_| |  __/ | | | | | (_) | | |__| (_) | | | | ||  __/ | | | |_
+ |____/ \___|_| |_| |_|\___/   \____\___/|_| |_|\__\___|_| |_|\__|
+
+ Adapted from: https://github.com/cbracco/html5-test-page
+
+ This dummy content helps you test the styling of various HTML elements.
+ Delete this content when you are finished.
+ */
+ ?>
     <div id="top" class="page" role="document">
         <header role="banner">
             <h1>HTML5 Test Page</h1>
@@ -331,50 +339,50 @@ p q r s t u v w x y z { | } ~ </pre>
                 <header><h1>Form elements</h1></header>
 
                 <form>
-                    <fieldset id="forms__input">
+                    <fieldset class="form-group" id="forms__input">
                         <legend>Input fields</legend>
 
                         <p>
                             <label for="input__text">Text Input</label>
-                            <input id="input__text" type="text" placeholder="Text Input">
+                            <input id="input__text" type="text" class="form-control" placeholder="Text Input">
                         </p>
                         <p>
                             <label for="input__password">Password</label>
-                            <input id="input__password" type="password" placeholder="Type your Password">
+                            <input id="input__password" type="password" class="form-control" placeholder="Type your Password">
                         </p>
                         <p>
                             <label for="input__webaddress">Web Address</label>
-                            <input id="input__webaddress" type="url" placeholder="http://yoursite.com">
+                            <input id="input__webaddress" type="url" class="form-control" placeholder="http://yoursite.com">
                         </p>
                         <p>
                             <label for="input__emailaddress">Email Address</label>
-                            <input id="input__emailaddress" type="email" placeholder="name@email.com">
+                            <input id="input__emailaddress" type="email" class="form-control" placeholder="name@email.com">
                         </p>
                         <p>
                             <label for="input__phone">Phone Number</label>
-                            <input id="input__phone" type="tel" placeholder="(999) 999-9999">
+                            <input id="input__phone" type="tel" class="form-control" placeholder="(999) 999-9999">
                         </p>
                         <p>
                             <label for="input__search">Search</label>
-                            <input id="input__search" type="search" placeholder="Enter Search Term">
+                            <input id="input__search" type="search" class="form-control" placeholder="Enter Search Term">
                         </p>
                         <p>
                             <label for="input__text2">Number Input</label>
-                            <input id="input__text2" type="number" placeholder="Enter a Number">
+                            <input id="input__text2" type="number" class="form-control" placeholder="Enter a Number">
                         </p>
                         <p>
                             <label for="input__text3" class="error">Error</label>
-                            <input id="input__text3" class="is-error" type="text" placeholder="Text Input">
+                            <input id="input__text3" class="is-error" type="text" class="form-control" placeholder="Text Input">
                         </p>
                         <p>
                             <label for="input__text4" class="valid">Valid</label>
-                            <input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
+                            <input id="input__text4" class="is-valid" type="text" class="form-control" placeholder="Text Input">
                         </p>
-                    </fieldset>
+                    </fieldset class="form-group">
 
                     <p><a href="#top">[Top]</a></p>
 
-                    <fieldset id="forms__select">
+                    <fieldset class="form-group" id="forms__select">
                         <legend>Select menus</legend>
 
                         <p>
@@ -387,11 +395,11 @@ p q r s t u v w x y z { | } ~ </pre>
                                 </optgroup>
                             </select>
                         </p>
-                    </fieldset>
+                    </fieldset class="form-group">
 
                     <p><a href="#top">[Top]</a></p>
 
-                    <fieldset id="forms__checkbox">
+                    <fieldset class="form-group" id="forms__checkbox">
                         <legend>Checkboxes</legend>
 
                         <ul class="list list--bare">
@@ -399,11 +407,11 @@ p q r s t u v w x y z { | } ~ </pre>
                             <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
                             <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
                         </ul>
-                    </fieldset>
+                    </fieldset class="form-group">
 
                     <p><a href="#top">[Top]</a></p>
 
-                    <fieldset id="forms__radio">
+                    <fieldset class="form-group" id="forms__radio">
                         <legend>Radio buttons</legend>
 
                         <ul class="list list--bare">
@@ -411,22 +419,22 @@ p q r s t u v w x y z { | } ~ </pre>
                             <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
                             <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
                         </ul>
-                    </fieldset>
+                    </fieldset class="form-group">
 
                     <p><a href="#top">[Top]</a></p>
 
-                    <fieldset id="forms__textareas">
+                    <fieldset class="form-group" id="forms__textareas">
                         <legend>Textareas</legend>
 
                         <p>
                             <label for="textarea">Textarea</label>
-                            <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+                            <textarea id="textarea" rows="8" cols="48" class="form-control" placeholder="Enter your message here"></textarea>
                         </p>
-                    </fieldset>
+                    </fieldset class="form-group">
 
                     <p><a href="#top">[Top]</a></p>
 
-                    <fieldset id="forms__html5">
+                    <fieldset class="form-group" id="forms__html5">
                         <legend>HTML5 inputs</legend>
 
                         <p>
@@ -461,11 +469,11 @@ p q r s t u v w x y z { | } ~ </pre>
                             <label for="idtl">Datetime-local input</label>
                             <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
                         </p>
-                    </fieldset>
+                    </fieldset class="form-group">
 
                     <p><a href="#top">[Top]</a></p>
 
-                    <fieldset id="forms__action">
+                    <fieldset class="form-group" id="forms__action">
                         <legend>Action buttons</legend>
 
                         <p>
@@ -474,7 +482,7 @@ p q r s t u v w x y z { | } ~ </pre>
                             <input type="reset" value="Reset">
                             <input type="submit" value="Disabled" disabled>
                         </p>
-                    </fieldset>
+                    </fieldset class="form-group">
 
                     <p><a href="#top">[Top]</a></p>
                 </form>
@@ -485,5 +493,14 @@ p q r s t u v w x y z { | } ~ </pre>
             <p>Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
         </footer>
     </div>
-</body>
-</html>
+    <?php
+    /*
+       _____           _   ____                          ____            _             _
+      | ____|_ __   __| | |  _ \  ___ _ __ ___   ___    / ___|___  _ __ | |_ ___ _ __ | |_
+      |  _| | '_ \ / _` | | | | |/ _ \ '_ ` _ \ / _ \  | |   / _ \| '_ \| __/ _ \ '_ \| __|
+      | |___| | | | (_| | | |_| |  __/ | | | | | (_) | | |__| (_) | | | | ||  __/ | | | |_
+      |_____|_| |_|\__,_| |____/ \___|_| |_| |_|\___/   \____\___/|_| |_|\__\___|_| |_|\__|
+    */
+    ?>
+
+</div><!-- .content -->
